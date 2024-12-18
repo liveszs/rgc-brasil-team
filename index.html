@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RGC BRASIL TEAM</title>
+</head>
+<body>
+    <div class="container">
+        <div class="RGC">
+            <div class="topo">
+                <h1>RGC BRASIL TEAM</h1>
+            </div>
+            <div class="meio">
+                <form>
+                    <div class="campo">
+                        <label for="Nome">Nome</label>
+                        <input type="text" name="Nome" id="nome" required>
+                    </div>
+                    <div class="campo">
+                        <label for="escolha">Escolha uma opção</label>
+                        <input list="opcoes" id="escolha" name="escolha" placeholder="Digite ou escolha..." required>
+                        <datalist id="opcoes">
+                            <option value="Anuncio na Brasil de outros Países">
+                            <option value="Disconnect">
+                            <option value="Leaver">
+                            <option value="AntiGamer">
+                            <option value="AFK (Away From the Keyboard)">
+                            <option value="No !RMK">
+                            <option value="Desrespeito a Moderação">
+                            <option value="Racismo/Preconceito/Bullying">
+                            <option value="BadManner">
+                            <option value="Flooder/Caps">
+                            <option value="Conta Fake">
+                            <option value="Mamuter">
+                            <option value="MapHack">
+                            <option value="Abuso de TC (Team Captain) [ALTERADA 24/02/2021]">
+                            <option value="Abuso de SIGN">
+                            <option value="Abuso de BUG">
+                            <option value="Multi-Ranking">
+                            <option value="Pause In-Game">
+                        </datalist>
+                      </div> 
+
+                      <div class="campo">
+                        <label for="Multiplicador">Número de vezes</label>
+                        <input type="number" id="multiplicador" required>
+                    </div>
+                    
+
+                    <div class="fim">
+                        <button type="submit">Calcular</button>
+                    </div>
+                   
+                </form>
+                <p id="resultado"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
